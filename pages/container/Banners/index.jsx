@@ -1,13 +1,15 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Banner } from "./styles";
+import Slider from "../../components/Slider";
 
 export default function Banners() {
   return (
-    <div className="ecom-banner">
+    <Banner>
       <Container>
         <Row>
           <Col xxl={8}>
-            <p>Banner Image & Text</p>
+            <Slider />
           </Col>
           <Col xxl={4} className="text-center">
             <Row>
@@ -27,6 +29,6 @@ export default function Banners() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </Banner>
   );
 }

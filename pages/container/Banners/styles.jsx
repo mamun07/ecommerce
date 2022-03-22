@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Banners = styled.div`
-  background: var(--dark2);
-  color: var(--white2);
+export const Banner = styled.div`
+  background: var(--white);
+  color: var(--dark);
 `;
