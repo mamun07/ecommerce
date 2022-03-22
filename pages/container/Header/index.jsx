@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import { Col, Container, Form, Row } from "react-bootstrap";
@@ -9,8 +10,9 @@ import {
   HeaderSearch,
   HeaderCart,
   CartIcon,
+  TopInfo,
+  TopMenu,
 } from "./styles";
-import Link from "next/link";
 
 export default function Header() {
   return (
@@ -18,74 +20,94 @@ export default function Header() {
       <HeaderTop>
         <Container>
           <Row>
-            <Col xxl={3}>
-              <div className="notice text-left">Left</div>
+            <Col className="d-none d-md-block" md={4}>
+              <TopInfo>
+                <ul>
+                  <li>
+                    <a href="tel:6546-56565">
+                      <i className="las la-headphones"></i> 6546-56565
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:6546-56565">
+                      <i className="lar la-envelope"></i> 6546-56565
+                    </a>
+                  </li>
+                </ul>
+              </TopInfo>
             </Col>
-            <Col xxl={6}>
+            <Col xs={12} md={4}>
               <div className="notice text-center">
                 <Typewriter
                   options={{
                     autoStart: true,
                     loop: true,
-                    strings: ["Center Text"],
+                    strings: ["ঈদের প্রি-অর্ডার নেয়া হবে ১০ এপ্রিল পর্যন্ত"],
                   }}
                 />
               </div>
             </Col>
-            <Col xxl={3}>
-              <div className="notice text-end">Right</div>
+            <Col className="d-none d-md-block" md={4}>
+              <TopMenu>
+                <ul>
+                  <li>
+                    <a href="tel:6546-56565">
+                      <i className="las la-info-circle"></i> Helps
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:6546-56565">
+                      <i className="las la-hands-helping"></i> Contact us
+                    </a>
+                  </li>
+                </ul>
+              </TopMenu>
             </Col>
           </Row>
         </Container>
       </HeaderTop>
 
-      <HeaderBottom>
+      <HeaderBottom sticky="top">
         <Container>
-          <Row>
-            <Col xxl={12}>
-              <div className="d-flex align-items-center justify-content-between header-menu">
-                <HeaderLogo>
-                  <a href="/">
-                    <Image
-                      src="/logo.svg"
-                      alt="image"
-                      width={"120px"}
-                      height={"50px"}
-                    />
-                  </a>
-                </HeaderLogo>
-                <HeaderSearch>
-                  <Form>
-                    <Form.Group controlId="formGroupPassword">
-                      <Form.Control type="text" placeholder="Search here..." />
-                    </Form.Group>
-                  </Form>
-                </HeaderSearch>
-                <HeaderCart>
-                  <ul>
-                    <li>
-                      <Link href="/cart">
-                        <CartIcon>
-                          <i className="las la-shopping-basket"></i>
-                          <span>3</span>
-                        </CartIcon>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <i className="lar la-user"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/wish">
-                        <i className="lar la-heart"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </HeaderCart>
-              </div>
-            </Col>
-          </Row>
+          <HeaderLogo>
+            <Link href="/">
+              <Image
+                src="/logo.svg"
+                width={"120px"}
+                height={"50px"}
+                alt="ecom logo image"
+              />
+            </Link>
+          </HeaderLogo>
+          <HeaderSearch>
+            <Form>
+              <Form.Group controlId="formGroupPassword">
+                <Form.Control type="text" placeholder="Search here..." />
+              </Form.Group>
+            </Form>
+          </HeaderSearch>
+          <HeaderCart>
+            <ul>
+              <li>
+                <Link href="/cart">
+                  <CartIcon>
+                    <i className="las la-shopping-basket"></i>
+                    <span>3</span>
+                  </CartIcon>
+                </Link>
+              </li>
+              <li className="d-none d-md-block">
+                <Link href="/">
+                  <i className="lar la-user"></i>
+                </Link>
+              </li>
+              <li className="d-none d-md-block">
+                <Link href="/wish">
+                  <i className="lar la-heart"></i>
+                </Link>
+              </li>
+            </ul>
+          </HeaderCart>
         </Container>
       </HeaderBottom>
     </>

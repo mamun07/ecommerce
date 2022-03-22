@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         --white: #ffffff;
         --white2: #F1F6F9;
         --white3: #9BA4B4;
+        --white4: #b8bdc7;
         --orange: #D65A31;
 
         // global padding...
@@ -58,6 +59,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     a{
         color: var(--orange);
+        text-decoration: none;
     }
     input:focus,
     textarea:focus{
