@@ -1,17 +1,15 @@
 import styled from "styled-components";
 import { Navbar } from "react-bootstrap";
 
-export const HeaderTop = styled.div`
-  background: var(--dark2);
-  color: var(--white2);
-  padding: var(--p1);
-`;
-export const HeaderBottom = styled(Navbar)`
+export const HeaderTop = styled(Navbar)`
   background: var(--white);
   padding: var(--p1);
   border-bottom: 1px solid var(--white2);
 `;
 export const HeaderLogo = styled.div`
+  img {
+    cursor: pointer;
+  }
   @media (max-width: 425px) {
     img {
       width: 80px !important;
@@ -19,17 +17,17 @@ export const HeaderLogo = styled.div`
   }
 `;
 export const HeaderSearch = styled.div`
-  input[type="text"] {
+  input[type="search"] {
     width: 600px;
     border-radius: 50px;
   }
   @media (max-width: 768px) {
-    input[type="text"] {
+    input[type="search"] {
       width: 300px;
     }
   }
   @media (max-width: 500px) {
-    input[type="text"] {
+    input[type="search"] {
       width: 200px;
     }
   }
@@ -82,44 +80,9 @@ export const HeaderCart = styled.div`
   }
 `;
 
-export const TopInfo = styled.div`
-  ul {
-    li {
-      list-style: none;
-      float: left;
-      margin-right: 20px;
-      a {
-        color: var(--white4);
-        font-size: 16px;
-        i {
-          margin-right: 5px;
-          font-size: 20px;
-        }
-      }
-    }
-    li:last-child {
-      margin-right: 0;
-    }
-  }
-`;
-export const TopMenu = styled.div`
-  ul {
-    float: right;
-    li {
-      list-style: none;
-      float: left;
-      margin-right: 20px;
-      a {
-        color: var(--white4);
-        font-size: 16px;
-        i {
-          margin-right: 5px;
-          font-size: 20px;
-        }
-      }
-    }
-    li:last-child {
-      margin-right: 0;
-    }
-  }
+// Header Menu style
+export const HeaderMenu = styled.div`
+  border-bottom: 1px solid var(--white2);
+  color: var(--dark);
+  padding: var(--p0);
 `;

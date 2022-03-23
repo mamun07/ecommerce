@@ -14,6 +14,8 @@ export const GlobalStyle = createGlobalStyle`
         --orange: #D65A31;
 
         // global padding...
+        --p0: 0;
+        --p05: 5px 0;
         --p1: 10px 0;
         --p2: 20px 0;
         --p3: 30px 0;
@@ -62,9 +64,9 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
     input:focus,
+    button:focus,
     textarea:focus{
         border-color: var(--orange) !important;
         box-shadow: none !important;
     }
-    
 `;

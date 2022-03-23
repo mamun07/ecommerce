@@ -15,6 +15,23 @@ export default function Home() {
           <h6>Top Brand</h6>
           <h6>New Products</h6>
           <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
+          <h6>Offer Banner</h6>
           <h6>Daily Deals</h6>
           <h6>Home Dacore</h6>
           <h6>Campaine Banner</h6>
