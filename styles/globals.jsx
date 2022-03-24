@@ -7,11 +7,13 @@ export const GlobalStyle = createGlobalStyle`
         // global color...
         --dark: #14274E;
         --dark2: #394867;
+        --dark3: #000000a6;
         --white: #ffffff;
         --white2: #F1F6F9;
         --white3: #9BA4B4;
         --white4: #b8bdc7;
         --orange: #D65A31;
+        --orange2: #ffc6b3;
 
         // global padding...
         --p0: 0;
@@ -37,6 +39,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0px;
         background: var(--white);
         color: var(--dark);
+        font-size: 14px;
         font-family: var(--normal);
     }
     h1,h2,h3,h4,h5,h6{
@@ -68,5 +71,8 @@ export const GlobalStyle = createGlobalStyle`
     textarea:focus{
         border-color: var(--orange) !important;
         box-shadow: none !important;
+    }
+    li{
+        list-style: none;
     }
 `;

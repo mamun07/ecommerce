@@ -11,6 +11,7 @@ import {
   HeaderMenu,
 } from "./styles";
 import CategoryMenu from "../../components/CategoryMenu";
+import Menus from "../../components/Menus";
 
 export default function Header() {
   return (
@@ -26,9 +27,8 @@ export default function Header() {
                 alt="ecom logo image"
               />
             </Link>
+            <CategoryMenu />
           </HeaderLogo>
-
-          <CategoryMenu />
 
           <HeaderSearch>
             <Form>
@@ -42,7 +42,7 @@ export default function Header() {
               <li>
                 <Link href="/cart">
                   <CartIcon>
-                    <i className="las la-shopping-basket"></i>
+                    <i className="las la-shopping-cart"></i>
                     <span>3</span>
                   </CartIcon>
                 </Link>
@@ -63,7 +63,9 @@ export default function Header() {
       </HeaderTop>
 
       <HeaderMenu className="d-none d-md-block">
-        <Container>ok</Container>
+        <Container>
+          <Menus />
+        </Container>
       </HeaderMenu>
     </>
   );

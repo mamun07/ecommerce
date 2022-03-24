@@ -7,6 +7,8 @@ export const HeaderTop = styled(Navbar)`
   border-bottom: 1px solid var(--white2);
 `;
 export const HeaderLogo = styled.div`
+  display: flex;
+  align-items: center;
   img {
     cursor: pointer;
   }
@@ -20,6 +22,7 @@ export const HeaderSearch = styled.div`
   input[type="search"] {
     width: 600px;
     border-radius: 50px;
+    border: 1px solid var(--orange2);
   }
   @media (max-width: 768px) {
     input[type="search"] {
@@ -34,6 +37,9 @@ export const HeaderSearch = styled.div`
 `;
 export const CartIcon = styled.div`
   position: relative;
+  i {
+    color: var(--dark2);
+  }
   span {
     position: absolute;
     top: 0;
@@ -85,4 +91,5 @@ export const HeaderMenu = styled.div`
   border-bottom: 1px solid var(--white2);
   color: var(--dark);
   padding: var(--p0);
+  margin-bottom: 10px;
 `;

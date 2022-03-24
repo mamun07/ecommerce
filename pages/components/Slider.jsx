@@ -23,7 +23,7 @@ export default function Slider() {
         <SwiperSlide>
           <Image
             width={900}
-            height={500}
+            height={400}
             src="/images/1.jpg"
             alt="banner one"
           />
@@ -31,7 +31,7 @@ export default function Slider() {
         <SwiperSlide>
           <Image
             width={900}
-            height={500}
+            height={400}
             src="/images/1.jpg"
             alt="banner one"
           />
@@ -39,7 +39,7 @@ export default function Slider() {
         <SwiperSlide>
           <Image
             width={900}
-            height={500}
+            height={400}
             src="/images/1.jpg"
             alt="banner one"
           />
